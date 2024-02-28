@@ -47,6 +47,11 @@ Route::middleware('auth')->group(
         Route::resource('invoice_attachments', InvoiceAttachmentsController::class);
 
 
+
+//status
+                Route::resource('invoice_attachmentseeee', InvoiceAttachmentsController::class);
+
+
         Route::get('/home', [HomeController::class, 'index'])->name('home');
         Route::get('/section/{id}', [InvoicesController::class, 'getproducts']);
         Route::get('/invoices_details/{id}', [InvoicesDetailsController::class, 'invoices_details']);
